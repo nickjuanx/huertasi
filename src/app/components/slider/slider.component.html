@@ -1,0 +1,13 @@
+<div id="container">
+<input
+  type="range"
+  [(ngModel)]="selectedValue"
+  (change)=sendUpdate()
+  id="yScale"
+  [min]=min
+  [max]=max
+  [step]=step
+  [ngStyle]="{'background-size': (selectedValue-min)/(max-min)*100+'%'}"
+  [ngClass]="{darkMode: darkMode, disabled:disabled}"
+  />
+</div>

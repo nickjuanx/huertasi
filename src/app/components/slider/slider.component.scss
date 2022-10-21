@@ -1,0 +1,56 @@
+#container{
+  display: flex;
+}
+
+//Estilos de los sliders
+input[type="range"]{
+  flex-grow: 1;
+  -webkit-appearance: none;
+  //margin-right: 15px;
+  min-width: 50px;
+  height: 7px;
+  box-sizing: border-box;
+
+  // background: composer.$composer-light-gray;
+  border-radius: 5px;
+  background-image: linear-gradient(white,white);
+  background-repeat: no-repeat;
+}
+
+
+//El botón del slider en posición normal
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: orange;
+  //cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+//El botón del slider en hover
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #ff9748fc;
+}
+
+//Fondo del slider (la altura del círculo de selección pero atrás de la barra de selecció)
+input[type="range"]::-webkit-slider-runnable-track  {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;//
+}
+
+.darkMode{
+  background-image: linear-gradient(#C57012,#C57012) !important;
+}
+
+.disabled{
+  pointer-events: none;
+  input[type="range"]::-webkit-slider-thumb:hover {
+    background: #707070fc;
+  }
+}

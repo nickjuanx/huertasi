@@ -16,15 +16,18 @@
   </ion-header>
 
   <app-explore-container name="Tab 3 page"></app-explore-container>
+  <h1>HOLD</h1>
+  <app-slider [min]="0" [max]="10" [startValue]="0" (onValueChanged)="sliderValue = $event"></app-slider>
+  <h1>{{sliderValue}}</h1>
 </ion-content>
 
 
 
-<ion-datetime
+<!-- <ion-datetime
   value="2022-04-21T00:00:00"
   min="2022-01-01T00:00:00"
   max="2028-12-31T23:59:59"
-></ion-datetime>
+></ion-datetime> -->
 
 
 
