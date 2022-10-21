@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "huertanacional",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

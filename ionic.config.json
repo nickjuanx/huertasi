@@ -1,0 +1,8 @@
+{
+  "name": "huertanacional",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "a24da178"
+}
