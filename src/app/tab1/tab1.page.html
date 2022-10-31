@@ -17,11 +17,6 @@
 </ion-content>
 
 
-<ion-item>
-  <ion-checkbox slot="start"></ion-checkbox>
-  <ion-label>Quiero recibir artículos</ion-label>
-</ion-item>
-
 
 
 <ion-card>
@@ -43,6 +38,33 @@
     <ion-card-title>FERTILIZANTES</ion-card-title>
     <ion-card-subtitle>Cómo prepararlos en casa</ion-card-subtitle>
   </ion-card-header>
+
+
+
+  <ion-content class="ion-padding">
+    <ion-button expand="block" (click)="setOpen(true)">LEER ARTÍCULO</ion-button>
+    <ion-modal [isOpen]="isModalOpen">
+      <ng-template>
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Modal</ion-title>
+            <ion-buttons slot="end">
+              <ion-button (click)="setOpen(false)">Close</ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum quidem recusandae ducimus quos
+            reprehenderit. Veniam, molestias quos, dolorum consequuntur nisi deserunt omnis id illo sit cum qui. Eaque,
+            dicta.
+          </p>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+  </ion-content>
+
+
 
   <ion-card-content>
     Haz click en la imagen para poder leer más sobre este artículo.

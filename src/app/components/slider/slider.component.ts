@@ -30,3 +30,5 @@ export class SliderComponent implements OnChanges {
     this.onValueChanged.emit(this.selectedValue.toString())
   }
 }
+
+
