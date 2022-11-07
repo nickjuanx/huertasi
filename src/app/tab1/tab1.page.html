@@ -23,13 +23,14 @@
   <img alt="Silhouette of mountains" src="https://www.iberdrola.com/documents/20125/39916/Huertos_746x419_Huerto.jpg/37eeb4fa-af04-1711-b3d7-9e749f5a1e84?t=1626678081336" />
   <ion-card-header>
     <ion-card-title>HUERTO</ion-card-title>
-    <ion-card-subtitle>7 consejos importantes</ion-card-subtitle>
+    <ion-card-subtitle>3 consejos importantes</ion-card-subtitle>
   </ion-card-header>
 
   <ion-card-content>
     Haz click en la imagen para poder leer más sobre este artículo.
   </ion-card-content>
 </ion-card>
+
 
 
 <ion-card>
@@ -41,29 +42,44 @@
 
 
 
+  
   <ion-content class="ion-padding">
     <ion-button expand="block" (click)="setOpen(true)">LEER ARTÍCULO</ion-button>
     <ion-modal [isOpen]="isModalOpen">
       <ng-template>
         <ion-header>
           <ion-toolbar>
-            <ion-title>Modal</ion-title>
+            <ion-title>Artículo</ion-title>
             <ion-buttons slot="end">
-              <ion-button (click)="setOpen(false)">Close</ion-button>
+              <ion-button (click)="setOpen(false)">Cerrar</ion-button>
             </ion-buttons>
           </ion-toolbar>
         </ion-header>
         <ion-content class="ion-padding">
+          <h3>1- PLANTA CON MODERACIÓN</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum quidem recusandae ducimus quos
-            reprehenderit. Veniam, molestias quos, dolorum consequuntur nisi deserunt omnis id illo sit cum qui. Eaque,
-            dicta.
-          </p>
+            
+Es importante no querer abarcar todas las hortalizas desde el principio ya que no será efectivo. Lo importante es comenzar con una variedad menor y que luego, paulatinamente, incorporar otras plantas diferentes.
+
+De esta manera podrás controlar todos los cultivos y sacar el máximo potencial de cada hortaliza. Además, es necesario que a tu huerto le dé un mínimo de 5 horas diarias de sol para garantizar la efectividad del cultivo ya que, en caso de no tener una suficiente exposición al sol, no tendrán un buen desarrollo.
+</p>
+<h3>2- POSEE UN TERRENO DE CALIDAD</h3> 
+<p> 
+Para que un huerto tenga un buen resultado en primer lugar es tener un suelo en buenas condiciones. Por ejemplo, si el suelo está muy encharcado, se debe fresar la tierra para conseguir que no se acumule tanta agua. Por el contrario, si está muy seca, se fresará para conseguir acumular mayor cantidad de agua.
+</p>
+<h3>3- PLANTA ACORDE AL CLIMA DE TU ZONA</h3>
+<p>
+  Para asegurarse la calidad de tus hortalizas, el clima es uno de los factores más importantes en tu huerto. De hecho, si los cultivos son autóctonos, menor será la probabilidad de contraer enfermedades o plagas.
+  
+  Es importante saber el momento y el clima adecuado para cada una de ellas, teniendo siempre en cuenta qué hortalizas son propias de tu zona.
+  
+  Si en el lugar que tu vives existe un gran nivel de contaminación, la opción idónea es plantar aquellos alimentos que son menos propicios a la contaminación (zanahorias, cebolla, ajo, remolacha, etc.).
+  Si el clima de tu zona es húmedo y frío, lo ideal es cultivar brócoli, col o guisante.
+  Si el clima de tu zona es seco y caluroso podrás cultivar tomate, pimiento, calabacín, perejil o pepino. En este caso recuerda siempre suministrar el agua y el sustrato necesarios.</p>
         </ion-content>
       </ng-template>
     </ion-modal>
   </ion-content>
-
 
 
   <ion-card-content>
