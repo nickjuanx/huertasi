@@ -17,7 +17,8 @@ export class RegistroPage implements OnInit {
 
   formularioRegistro: FormGroup;
   
-  
+  //UsuariosService es una clase
+  //NavController es una clase
   constructor( 
     private inicioS:UsuariosService, 
     private navegador:NavController, 

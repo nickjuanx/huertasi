@@ -17,9 +17,12 @@
   <app-explore-container name="Tab 2 page"></app-explore-container>
 </ion-content>
 
-<ion-content>
-  <ion-button (click)="showToast()">Click Me</ion-button>
-</ion-content>
+
+<ion-button (click)="presentToast()">REGADO COMPLETO</ion-button>
+<p>{{ handlerMessage }}</p>
+<p>{{ roleMessage }}</p>
+
+
 
 
 <ion-list>
@@ -92,12 +95,4 @@
                 <ion-toggle slot="end" ></ion-toggle>
               </ion-item>
 
-              <ion-list>
-                <ion-item>
-                  <ion-label>ZAPALLO</ion-label>
-                  <ion-toggle slot="end"></ion-toggle>
-                </ion-item>
-                <ion-item>
-                  <ion-label>REPOLLO</ion-label>
-                  <ion-toggle slot="end"></ion-toggle>
-                </ion-item>
+               

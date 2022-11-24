@@ -16,12 +16,19 @@
   </ion-header>
 
   <app-explore-container name="Tab 3 page"></app-explore-container>
-  <h1>CALCULADORA DE SUSTRATO</h1>
+  <h2>CALCULADORA DE NUTRIENTES</h2>
   <app-slider [min]="0" [max]="15" [startValue]="1" (onValueChanged)="sliderValue = $event"></app-slider>
 
   <h1>{{sliderValue}}</h1>
   <span> REQUIERE 3 LITROS DE FERTILIZANTE POR KILOGRAMO </span>
   
+
+<br>
+<br>
+  <img alt="Silhouette of mountains" src="https://ovacen.com/wp-content/uploads/2019/07/cantidad-fertilizante-segun-plantas-huerto.jpg" />
+
+
+
 </ion-content>
 
 
@@ -35,11 +42,8 @@
 
 
 <ion-chip>PORTFOLIO DE CULTIVOS</ion-chip>
-<ion-chip color="primary">CEBOLLA</ion-chip>
-<ion-chip color="secondary">TOMATE</ion-chip>
-<ion-chip color="tertiary">ZAPALLO</ion-chip>
-<ion-chip color="success">RUCULA</ion-chip>
-<ion-chip color="warning">LIMON</ion-chip>
+
+
 <ion-chip color="danger">LECHUGA</ion-chip>
 <ion-chip color="warning">ZANAHORIA</ion-chip>
 <ion-chip color="success">APIO</ion-chip>
