@@ -49,12 +49,12 @@ export class RegistroPage implements OnInit {
 
     let usuario = {
       nombre: f.nombre,
-      password: f.password
+      contraseña: f.password
     }
 
    // localStorage.setItem('usuario',JSON.stringify(usuario));
   
-    
+
   this.inicioS.register(usuario)
   this.navegador.navigateRoot('');
 

@@ -17,6 +17,7 @@ async getUsuarios () {
 
 
 
+
 async register (usuario) {
   const res = await fetch("http://localhost:8080/usuario", {method: "POST", body:JSON.stringify(usuario), headers: {
     'Content-Type': 'application/json'
